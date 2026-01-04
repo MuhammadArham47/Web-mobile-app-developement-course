@@ -1,0 +1,146 @@
+body {
+  overflow-x: hidden;
+}
+.navbar-brand {
+  font-size: 17px !important;
+  letter-spacing: 4px;
+}
+.nav-item a {
+  font-size: 17px !important;
+  letter-spacing: 3px;
+}
+.letter {
+  letter-spacing: 4px !important;
+}
+.architect-img {
+  top: 50%;
+  left: 50%;
+  width: 77%;
+  display: block;
+  position: absolute;
+  display: block;
+  object-fit: cover;
+  height: 790px;
+  transform: translate(-50%, -7%);
+}
+.position-data {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  transform: translate(-50%, 470%);
+  color: white;
+  font-weight: 350;
+  font-size: 36px;
+  letter-spacing: 4px;
+}
+.position-data span {
+  background: rgba(0, 0, 0, 0.75);
+  padding: 8px 15px;
+}
+
+.constainerss {
+  left: 0px;
+  top: 800px;
+  margin: 0 auto;
+  padding: 0 10px;
+  max-width: 1480px;
+  position: relative;
+}
+.projects-images {
+  width: 100%;
+}
+.projects-images-1 {
+  width: 100%;
+  filter: grayscale(75%);
+}
+.summer-hous {
+  position: absolute;
+  left: 12px;
+  top: 0px;
+  color: white;
+  padding: 7px 18px;
+  font-size: 16px;
+  background: rgb(0, 0, 0, 1);
+}
+
+.custom-design {
+  line-height: 1.4rem;
+  color: rgba(0, 0, 0, 0.596);
+}
+.ceo-color {
+  color: #aaa9a9;
+}
+.ceo-color-1 {
+  color: #5c5c5c;
+  line-height: 1.3rem;
+}
+.cus-butt {
+  border: none;
+  width: 100%;
+  display: block;
+  padding: 8px 0;
+  border-radius: 4px;
+}
+.custom-weight {
+  font-weight: 400;
+  font-size: 17px !important;
+}
+.all-inputs input {
+  border: 1px solid #5c5c5c70;
+  padding: 5px 10px;
+  color: #5c5c5c;
+}
+.all-inputs input:focus {
+  outline: none;
+}
+.send-message {
+  background-color: black;
+  color: white;
+  border: none;
+  padding: 7px 17px;
+  margin-top: 35px;
+  font-size: 16px;
+}
+footer {
+  position: relative;
+  top: 810px;
+  background-color: black;
+  color: white;
+  text-align: center;
+}
+footer p {
+  font-size: 17px;
+  padding: 20px 0;
+}
+footer p span {
+  text-decoration: underline;
+  cursor: pointer;
+}
+@media (max-width: 768px) {
+  .architect-img {
+    width: 100%;
+  }
+}
+@media (max-width: 575px) {
+  .margi-bot {
+    margin-bottom: 16px;
+  }
+}
+@media (max-width: 469px) {
+  .position-data {
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    font-size: 25px;
+    transform: translate(-50%, 770%);
+  }
+  .position-data span {
+    background: rgba(0, 0, 0, 0.75);
+    padding: 3px 8px;
+  }
+}

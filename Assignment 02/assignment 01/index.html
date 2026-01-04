@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Time Table ( Light )</title>
+    <link rel="stylesheet" href="./style.css" />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Kalam:wght@300;400;700&display=swap");
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="headers">
+        <h1>Time Table</h1>
+        <button id="dark">Dark Mode</button>
+      </div>
+    </header>
+    <main>
+      <div class="heading">
+        <h1>
+          Time Table - Muhammad Umair Ahmad's Skills Developement Program -
+          Faisalabad
+        </h1>
+      </div>
+      <div class="table-container">
+        <table class="table-style">
+          <thead>
+            <tr>
+              <th></th>
+              <th>Monday</th>
+              <th>Tuesday</th>
+              <th>Wednesday</th>
+              <th>Thursday</th>
+              <th>Friday</th>
+              <th>Saturday</th>
+              <th>Sunday</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="ccna">CCNA<br> (Cisco Certified Network Associate)</td>
+              <td>06:00 PM to 08:00 PM</td>
+              <td>06:00 PM to 08:00 PM</td>
+              <td>06:00 PM to 08:00 PM</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td class="weight">Graphic Designing</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td>02:00 Pm to 04:00 PM</td>
+              <td>02:00 Pm to 04:00 PM</td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td class="weight">IT Essentials</td>
+              <td>03:00 PM to 05:00 PM</td>
+              <td>03:00 PM to 05:00 PM</td>
+              <td>03:00 PM to 05:00 PM</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td class="weight">Web & Mobile Application Developement</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td><span class="weight">(Section D)</span><br> 06:00 PM to 08:00 PM</td>
+              <td><span class="weight">(Section D)</span><br> 06:00 PM to 08:00 PM</td>
+              <td>
+                <span><span class="weight">(Section A)</span><br> 09:00 AM to 11:00 AM</span
+                ><br><span><span class="weight">(Section B)</span><br> 11:00 AM to 01:00 PM</span
+                ><br><span><span class="weight">(Section C)</span><br> 06:00 PM to 08:00 PM</span>
+              </td>
+              <td>
+                <span><span class="weight">(Section A)</span><br> 09:00 AM to 11:00 AM</span
+                ><br><span><span class="weight">(Section B)</span><br> 11:00 AM to 01:00 PM</span
+                ><br><span><span class="weight">(Section C)</span><br> 06:00 PM to 08:00 PM</span>
+              </td>
+            </tr>
+            <tr>
+              <td class="weight">Video Editing</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td>04:00 PM to 06:00 PM</td>
+              <td>04:00 PM to 06:00 PM</td>
+              <td></td>
+              <td></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </main>
+    <footer>
+        <div class="footers">
+            <p>&copy; 2025. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+
+    <script>
+      const button = document.getElementById("dark");
+      button.addEventListener("click", ()=> {
+        window.location.href = "dark.html"
+      })
+    </script>
+  </body>
+</html>

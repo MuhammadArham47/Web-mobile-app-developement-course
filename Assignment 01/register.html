@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register page</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <table border="1" style="margin: 0 auto;">
+                <tr>
+                    <th><img src="/logo_saylani.png" alt="saylani-logo" width="110px"></th>
+                    <th style="padding: 5px 20px;"><a href="/index.html" style="color: blue;">Home</a></th>
+                    <th style="padding: 5px 20px;"><a href="/about.html" style="color: blue;">About</a></th>
+                    <th style="padding: 5px 20px;"><a href="/gallery.html" style="color: blue;">Gallery</a></th>
+                    <th style="padding: 5px 20px;"><a href="/Media.html" style="color: blue;">Media</a></th>
+                    <th style="padding: 5px 20px;"><a href="/contact.html" style="color: blue;">Contact</a></th>
+                    <th style="padding: 5px 20px;"><a href="/login.html" style="color: blue;">Login</a></th>
+                    <th style="padding: 5px 20px;"><a href="/register.html" style="color: blue;">Register</a></th>
+                </tr>
+            </table>
+            <hr>
+        </nav>
+    </header>
+    <main>
+        <h1 style="text-align: center;">Register Page</h1>
+        <hr>
+        <h2 style="text-align: center;">Please register to continue</h2>
+        <p style="text-align: center;">All the fields are required</p>
+        <hr>
+        <fieldset style="width: fit-content; margin: 0 auto;">
+            <legend>Register</legend>
+            <form action="">
+                <label for="name">Full Name:</label><br>
+            <input required type="text" name="" id="name" placeholder="Full Name"><br><br>
+            <label for="email">Email:</label><br>
+            <input required type="text" name="" id="email" placeholder="Email"><br><br>
+            <label for="password">Password</label><br>
+            <input required type="text" name="" id="password" placeholder="Password"><br><br>
+            <label for="">Gender:</label><br>
+            <label for="male">Male:</label>
+            <input required type="radio" name="gender" id="male">
+            <label for="female">Female:</label>
+            <input required type="radio" name="gender" id="female"><br><br>
+            <label for="">Hobbies:</label><br>
+            <label for="music">Music:</label>
+            <input required type="checkbox" name="" id="music">
+            <label for="art">Art:</label>
+            <input required type="checkbox" name="" id="art">
+            <label for="paint">Painnting:</label>
+            <input required type="checkbox" id="paint"><br><br>
+            <label for="country">Country</label><br>
+            <select name="" id="country">
+                <option value="pakistan">Pakistan</option>
+                <option value="faisalabad">Faisalabad</option>
+                <option value="lahore">Lahore</option>
+                <option value="karachi">Karachi</option>
+            </select><br><br>
+            <label for="dob">DOB:</label><br>
+            <input required type="date" id="dob"><br><br>
+            <label for="file">Upload your photo:</label><br>
+            <input required type="file" name="" id="file"><br><br>
+            <button type="submit">Register</button><br><br>
+            <a href="" style="color: blue;">Already a user?</a>
+            </form>
+        </fieldset>
+        <hr>
+    </main>
+    <footer style="text-align: center;">
+        <p>Copyright &copy; 2025.All rights reserved.</p>
+    </footer>
+</body>
+</html>
