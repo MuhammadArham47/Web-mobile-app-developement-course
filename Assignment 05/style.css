@@ -15,30 +15,32 @@
 .origional-statement {
     margin-top: 80px !important;
 }
-.origional-statement input{
+.origional-statement div{
+    text-align: center;
     width: 100%;
+    padding: 21px 30px !important;
+    height: auto;
     padding: 8px;
     border-radius: 5px;
     color: #1d3557;
     border: 1px solid #1d3557;
     background-color: transparent;
 }
-.origional-statement input:focus{
-    outline: none;
+#datas p{
+    margin-bottom: 2px;
 }
 .origional-statement-1 {
     margin-top: 80px;
 }
-.origional-statement-1 input{
+.origional-statement-1 div{
     width: 100%;
-    padding: 8px;
+    padding: 21px 30px;
+    height: auto;
+    text-align: start;
     border-radius: 5px;
     color: #1d3557;
     border: 1px solid #1d3557;
     background-color: transparent;
-}
-.origional-statement-1 input:focus{
-    outline: none;
 }
 .background-color {
     min-height: 89.5vh;
