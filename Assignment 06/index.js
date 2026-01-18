@@ -115,3 +115,5 @@ ifStarementNested.addEventListener("click", () => {
     alert("You're fail");
   };
 });
+
+// let variable = 123
