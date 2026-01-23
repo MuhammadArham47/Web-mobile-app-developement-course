@@ -12,6 +12,10 @@
     gap: 6px;
     justify-content: center;
 }
+.navbar-toggler:focus{
+  outline: none !important;
+  box-shadow: none !important;
+}
 .origional-statement {
     margin-top: 80px !important;
 }

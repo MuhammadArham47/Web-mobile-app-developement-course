@@ -12,6 +12,10 @@ body {
 .letter {
   letter-spacing: 4px !important;
 }
+.navbar-toggler:focus{
+  outline: none !important;
+  box-shadow: none !important;
+}
 .architect-img {
   top: 50%;
   left: 50%;

@@ -11,6 +11,10 @@
   display: flex;
   align-items: center;
 }
+.navbar-toggler:focus{
+  outline: none !important;
+  box-shadow: none !important;
+}
 .links a {
   display: inline-block;
   text-decoration: none;

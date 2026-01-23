@@ -11,6 +11,10 @@
   position: relative;
   align-items: center;
 }
+.navbar-toggler:focus{
+  outline: none !important;
+  box-shadow: none !important;
+}
 .heading {
   max-width: 650px;
   margin-top: 70px;
