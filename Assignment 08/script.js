@@ -280,3 +280,5 @@ replaceWord.addEventListener('click', ()=> {
   let checkIndex = value.replace(check, "****");
   output.innerHTML = `<p>Updatted sentense I love my country "<span style="color: green;">${check}</span>"</p>`
 });
+
+document.getElementById("updateYear").innerHTML = new Date().getFullYear();

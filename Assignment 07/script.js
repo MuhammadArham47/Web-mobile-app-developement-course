@@ -136,3 +136,5 @@ generateTable.addEventListener("click", () => {
     }
   }
 });
+
+document.getElementById("updateYear").innerHTML = new Date().getFullYear();

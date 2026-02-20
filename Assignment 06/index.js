@@ -116,4 +116,6 @@ ifStarementNested.addEventListener("click", () => {
   };
 });
 
+document.getElementById("updateYear").innerHTML = new Date().getFullYear();
+
 // let variable = 123

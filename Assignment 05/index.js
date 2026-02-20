@@ -226,3 +226,5 @@ calculateNumbers.addEventListener("click", ()=> {
     outPut.style.textAlign = "center"
     outPut.innerHTML = 26;
 });
+
+document.getElementById("updateYear").innerHTML = new Date().getFullYear();
