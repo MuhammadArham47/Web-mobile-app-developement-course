@@ -59,3 +59,5 @@ keepAskingTheName.addEventListener('click', ()=> {
         output.innerHTML = name
     }
 })
+
+document.getElementById("updateYear").innerHTML = new Date().getFullYear();
