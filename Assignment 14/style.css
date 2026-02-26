@@ -1,0 +1,149 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.background-color {
+  background-color: #081923;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  width: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.container input {
+  width: 100%;
+  height: 100px;
+  /* border-radius: 10px; */
+  border: none;
+  text-align: right;
+  outline: none;
+  padding: 0 10px;
+  /* color: #fff; */
+  font-size: 22px;
+  font-weight: 600;
+}
+
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  gap: 2px;
+}
+
+.div1 {
+  width: 200px;
+  height: 90px;
+  font-size: 18px;
+  font-weight: 600;
+  /* border: 1px solid #0e3a4d; */
+  /* background: #12394a; */
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: 0.2s;
+}
+.div2, .div3, .div4, .div5, .div6, .div7, .div8, .div9, .div10, .div11, .div12, .div13, .div14, .div15, .div16, .div17 {
+  /* width: 90px;
+  height: 90px; */
+  /* border: 1px solid #0e3a4d; */
+  background: #0c2635;
+  font-size: 20px;
+  border: none;
+  color: white;
+  cursor: pointer;
+  font-size: 30px;
+  transition: 0.2s;
+}
+
+.div1:hover, .div2:hover, .div3:hover, .div4:hover, .div5:hover, .div6:hover, .div7:hover, .div8:hover, .div9:hover, .div10:hover, .div11:hover, .div12:hover, .div13:hover, .div14:hover, .div15:hover, .div16:hover, .div17:hover, .div18:hover {
+  opacity: 0.6;
+}
+
+.operator {
+  /* background: #0f2f3d; */
+}
+
+.clear {
+  background: #ff2d7a;
+  color: white;
+}
+
+.plus {
+}
+
+.equal {
+  background: #05b0fe;
+  font-size: 20px;
+  border: none;
+  color: white;
+  cursor: pointer;
+  font-size: 30px;
+  transition: 0.2s;
+}
+
+.div1 {
+  grid-column: span 2 / span 2;
+}
+
+.div2 {
+  grid-column-start: 3;
+}
+
+.div3 {
+  grid-column-start: 4;
+}
+
+.div4 {
+  grid-row-start: 2;
+}
+
+.div5 {
+  grid-row-start: 2;
+}
+
+.div6 {
+  grid-row-start: 2;
+}
+
+.div7 {
+  grid-row-start: 2;
+}
+
+.div9 {
+  grid-row-start: 3;
+}
+
+.div11 {
+  grid-row: span 2 / span 2;
+}
+
+.div13 {
+  grid-row-start: 4;
+}
+
+.div15 {
+  grid-row-start: 5;
+}
+
+.div16 {
+  grid-row-start: 5;
+}
+
+.div17 {
+  grid-row-start: 5;
+}
+
+.div18 {
+  grid-row-start: 5;
+}
