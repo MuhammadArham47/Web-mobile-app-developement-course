@@ -21,6 +21,7 @@ function About() {
     <div className="container my-5">
       <Title level={1}>About Page</Title>
       <Title level={3}>User List Using Map Method 📃</Title>
+      <div className="overflow-auto">
       <table className="table table-striped table-hover table-bordered mt-3">
         <thead>
           <tr>
@@ -45,6 +46,7 @@ function About() {
           ))}
         </tbody>
       </table>
+      </div>
     </div>
   );
 }
