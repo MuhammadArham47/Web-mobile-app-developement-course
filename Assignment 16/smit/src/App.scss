@@ -9,8 +9,6 @@
 main {
   flex: 1 0 auto;
 }
-
-/* 404 Text ki animation */
 .custom-404 {
   font-size: 10rem;
   color: #0d6efd;
@@ -19,15 +17,6 @@ main {
   margin-bottom: 0;
   text-shadow: 4px 4px 0px #dee2e6;
 }
-
-/* Floating Animation */
-// @keyframes float {
-//     0% { transform: translateY(0px); }
-//     50% { transform: translateY(-20px); }
-//     100% { transform: translateY(0px); }
-// }
-
-/* Niche wali shadow ki animation */
 .error-shadow {
   width: 150px;
   height: 20px;
@@ -49,7 +38,6 @@ main {
   }
 }
 
-/* Button hover effect */
 .custom-btn {
   transition: all 0.3s ease;
 }
@@ -64,13 +52,13 @@ main {
   justify-content: center;
   align-items: center;
   height: 100vh;
-  background: #0f2027; /* fallback for old browsers */
+  background: #0f2027;
   background: linear-gradient(
     to right,
     #0f2027,
     #203a43,
     #2c5364
-  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  );
 }
 
 .Login-design {
