@@ -1,17 +1,16 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { useLocation, useNavigate } from "react-router-dom";
+import { useLocation } from "react-router-dom";
 
 
 function Navbar() {
 
-  const usenavigate = useNavigate();
-
   const location = useLocation();
-  const user = location.state?.user || {};
+  const user = location.state?.user || "";
 
   const logouting = ()=> {
-    usenavigate("/auth/login");
+    localStorage.removeItem("user");
+    user = "";
   };
 
   return (
