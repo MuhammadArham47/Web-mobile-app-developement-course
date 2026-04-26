@@ -30,6 +30,7 @@ function Register() {
     if (form.password !== form.confirmPassword) {
       return alert("Password and confirm password should be same");
     }
+    localStorage.setItem("existUser", JSON.stringify(form));
     localStorage.setItem("user", JSON.stringify(form));
     alert("Registration Successfull");
     setForm({

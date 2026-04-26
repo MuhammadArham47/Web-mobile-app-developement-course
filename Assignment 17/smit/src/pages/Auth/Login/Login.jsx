@@ -26,7 +26,8 @@ function Login() {
     if (!form.email || !form.password) {
       return alert("All fields are required");
     }
-    const user = JSON.parse(localStorage.getItem("user"));
+    if (localStorage.getItem("user")) {
+      const user = JSON.parse(localStorage.getItem("user"));
     if (!user) {
       return alert("User not found please signup first");
     }
@@ -35,6 +36,18 @@ function Login() {
       navigate("/", {state: {user: user}});
     } else {
       return alert("Invalid email or password");
+    }
+    } else {
+      const existUser = JSON.parse(localStorage.getItem("existUser"));
+    if (!existUser) {
+      return alert("User not found please signup first");
+    }
+    if (existUser.email === form.email && existUser.password === form.password) {
+      alert("Login Successfull");
+      navigate("/", {state: {user: existUser}});
+    } else {
+      return alert("Invalid email or password");
+    }
     }
   };
 

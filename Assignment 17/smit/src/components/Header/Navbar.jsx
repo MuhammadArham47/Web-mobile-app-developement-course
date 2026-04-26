@@ -12,7 +12,6 @@ function Navbar() {
     localStorage.removeItem("user");
     window.location.reload(true);
   };
-
   return (
     <header>
       <nav className="navbar navbar-expand-lg bg-primary navbar-dark">
