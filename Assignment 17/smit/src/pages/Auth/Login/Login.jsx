@@ -27,21 +27,15 @@ function Login() {
       return alert("All fields are required");
     }
     const user = JSON.parse(localStorage.getItem("user"));
+    if (!user) {
+      return alert("User not found please signup first");
+    }
     if (user.email === form.email && user.password === form.password) {
       alert("Login Successfull");
       navigate("/", {state: {user: user}});
     } else {
       return alert("Invalid email or password");
     }
-    // localStorage.setItem("user", JSON.stringify(form));
-    // alert("Registration Successfull");
-    // setForm({
-    //   name: "",
-    //   email: "",
-    //   password: "",
-    //   confirmPassword: "",
-    // });
-    // navigate("/auth/login");
   };
 
   return (
