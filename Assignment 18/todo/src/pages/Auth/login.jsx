@@ -71,7 +71,8 @@ function Login() {
                 <Input.Password size='large' placeholder='Enter your password' name='password' onChange={handleChange} />
               </Item>
             </Col>
-            <Col span={24} className='text-end'>
+            <Col span={24} className='text-end d-flex justify-content-between'>
+              <Text className=''><Link to="/auth/Forgot-Password">Forgot password</Link></Text>
               <Text className=''>Don't have an account? <Link to="/auth/register">Register</Link></Text>
             </Col>
             <Col span={24}>
