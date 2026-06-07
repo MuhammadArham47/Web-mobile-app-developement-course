@@ -1,0 +1,36 @@
+@import "./scss/bootstrap";
+
+#root{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+};
+
+main {
+    flex: 1 0 auto;
+};
+
+.auth {
+    min-height: 100vh;
+    background-color: #1d3557;
+}
+
+.card{
+    max-width: 500px;
+}
+
+.custom-btn i{
+    transition: 100ms ease-in-out !important;
+}
+
+.custom-btn:hover i {
+    transform: translateX(10px) !important;
+}
+
+.custom-section {
+    min-height: calc(100vh - 100px) !important;
+}
+
+.custom-sections {
+    min-height: calc(100vh - 100px) !important;
+}
