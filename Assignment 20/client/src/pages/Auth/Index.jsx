@@ -1,6 +1,6 @@
 import React from 'react'
 import { Route, Routes } from 'react-router-dom'
-import Register from './register'
+import Register from './Register'
 import Login from './Login'
 import PageNotFound from '../../components/PageNotFound'
 
