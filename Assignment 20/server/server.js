@@ -2,10 +2,30 @@ import'dotenv/config';
 import app from "./src/app.js";
 import { connectDB } from "./src/config/db.js";
 
-await connectDB();
+let isConnected = false;
 
-const port = process.env.PORT || 3000;
+async function connectToMongoDB() {
+    try {
 
-app.listen(port, () => {
-    console.log(`app listening on port ${port}`);
-}); 
+        await connectDB();
+        isConnected = true;
+        console.log("Database connected successfully");
+    } catch (error) {
+        console.error("Error connecting to MongoDB:", error);
+    }
+};
+
+app.use((req, res, next) => {
+    if (!isConnected) {
+        connectToMongoDB();
+    }
+    next();
+})
+
+// const port = process.env.PORT || 3000;
+
+// app.listen(port, () => {
+//     console.log(`app listening on port ${port}`);
+// }); 
+
+export default app
