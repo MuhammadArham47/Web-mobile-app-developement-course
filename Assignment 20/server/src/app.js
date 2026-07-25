@@ -5,7 +5,7 @@ import todoRoutes from './routes/todo.routes.js';
 
 const app = express();
 
-app.use(core());
+app.use(core({ origin: ["http://localhost:5173", "https://taskflow-pro-mern-stack.vercel.app"], credentials: true }));
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
