@@ -31,7 +31,7 @@ const Auth = ({ children }) => {
     const registerUser = async (formData) => {
         try {
 
-            const response = await axios.post('http://localhost:8000/auth/user/register', formData);
+            const response = await axios.post('https://expressjs-test-deployment-six.vercel.app/auth/user/register', formData);
 
             const { data, message, isError, success } = response.data;
 
@@ -54,7 +54,7 @@ const Auth = ({ children }) => {
     const userLogin = async (formData) => {
         try {
 
-            const response = await axios.post('http://localhost:8000/auth/user/login', formData);
+            const response = await axios.post('https://expressjs-test-deployment-six.vercel.app/auth/user/login', formData);
 
             const { isError, token, success, data, message } = response.data;
 
@@ -84,7 +84,7 @@ const Auth = ({ children }) => {
                 return dispatch({ type: "SET_LOGOUT" });
             };
 
-            const response = await axios.get('http://localhost:8000/auth/user/verify', {
+            const response = await axios.get('https://expressjs-test-deployment-six.vercel.app/auth/user/verify', {
                 headers: {
                     authorization: `Bearer ${token}`
                 }
@@ -116,7 +116,7 @@ const Auth = ({ children }) => {
 
             const token = localStorage.getItem('token');
 
-            const response = await axios.post('http://localhost:8000/auth/user/logout', {}, {
+            const response = await axios.post('https://expressjs-test-deployment-six.vercel.app/auth/user/logout', {}, {
                 headers: {
                     authorization: `Bearer ${token}`
                 }

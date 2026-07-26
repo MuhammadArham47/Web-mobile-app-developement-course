@@ -351,7 +351,7 @@ export default function Hero() {
                 formData.append('file', create.file)
             }
 
-            const response = await axios.post('http://localhost:8000/todo/createTodo', formData, {
+            const response = await axios.post('https://expressjs-test-deployment-six.vercel.app/todo/createTodo', formData, {
                 headers: {
                     authorization: `Bearer ${token}`
                 }
@@ -382,7 +382,7 @@ export default function Hero() {
 
             const token = localStorage.getItem('token');
 
-            const response = await axios.get('http://localhost:8000/todo/getTodos', {
+            const response = await axios.get('https://expressjs-test-deployment-six.vercel.app/todo/getTodos', {
                 headers: {
                     authorization: `Bearer ${token}`
                 }
@@ -408,7 +408,7 @@ export default function Hero() {
 
             const token = localStorage.getItem('token');
 
-            const response = await axios.delete(`http://localhost:8000/todo/deleteTodo/${id}`, {
+            const response = await axios.delete(`https://expressjs-test-deployment-six.vercel.app/todo/deleteTodo/${id}`, {
                 headers: {
                     authorization: `Bearer ${token}`
                 }
@@ -447,7 +447,7 @@ export default function Hero() {
             const token = localStorage.getItem('token');
             const oldId = editData.id;
 
-            const response = await axios.patch(`http://localhost:8000/todo/updateTodo/${oldId}`, editData, {
+            const response = await axios.patch(`https://expressjs-test-deployment-six.vercel.app/todo/updateTodo/${oldId}`, editData, {
                 headers: {
                     authorization: `Bearer ${token}`
                 }
