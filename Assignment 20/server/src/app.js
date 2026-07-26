@@ -1,11 +1,11 @@
 import express from 'express';
-import core from 'cors';
+import cors from 'cors';
 import userRoutes from './routes/user.routes.js';
 import todoRoutes from './routes/todo.routes.js';
 
 const app = express();
 
-app.use(core({ origin: ["http://localhost:5173", "https://taskflow-pro-mern-stack.vercel.app"], credentials: true }));
+app.use(cors({ origin: ["http://localhost:5173", "https://taskflow-pro-mern-stack.vercel.app"], credentials: true }));
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
